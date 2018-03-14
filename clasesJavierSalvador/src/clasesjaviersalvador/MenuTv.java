@@ -24,7 +24,7 @@ public class MenuTv {
         System.out.println("TV");
         System.out.println("Ingrese una opcion");
         while (!dato.equals("z")) {
-           
+            
             
             System.out.print(" a)Power ");
             System.out.print(" b)Subir canal ");
@@ -33,21 +33,28 @@ public class MenuTv {
             System.out.println("e)Bajar volumen");
             System.out.println("z)salir");
             dato = Menu.next();
-           
             if (dato.equals("a")) {
-               MenuT.encendido();
+                MenuT.encendido();
+                
+               
             }
-          else  if (dato.equals("b")&&dato.equals(MenuT.encendido2())) {
+           
+           if (dato.equals("b")) {
 
-                System.out.println("Subio al Canal: "+MenuT.getnocanalS());
+                MenuT.getnocanalS();
             }
-                  else if (dato.equals("c")&&dato.equals(true)) {
-
-                System.out.println("Bajo al Canal: "+MenuT.getnocanalR());
+                if (dato.equals("c")) {
+                 MenuT.getnocanalR();
             }
-            else {
-                System.out.println("Tv apagada");
+                
+                if (dato.equals("d")) {
+                 MenuT.getVolumencanalS();
+                }
+                if (dato.equals("e")) {
+                 MenuT.getVolumencanalB();
+                }
             }
+           
            }
+        }
         
-    }}
