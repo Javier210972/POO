@@ -19,12 +19,14 @@ private double Bonificacion;
 private double Descuentos;
 private double Liquido;
 private double aumento;
+private double SueldoBase2;
+private double SueldoBase3;
 
 
 public Empleado() {
  }
 
-public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,double SueldoBase,double Bonificacion,double Descuentos,double liquido,double aumento)
+public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,double SueldoBase,double Bonificacion,double Descuentos,double liquido,double aumento,double SueldoBase2,double SueldoBase3)
 {
  this.Codigoempleado=Codigo;
  this.Nombre=Nombre;
@@ -35,6 +37,8 @@ public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,doub
  this.Descuentos=Descuentos;
  this.Liquido=liquido;
  this.aumento=aumento;
+ this.aumento=SueldoBase2;
+ this.aumento=SueldoBase3;
 
 }
 
@@ -74,12 +78,22 @@ public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,doub
         this.SueldoBase=0.0483*this.SueldoBase;
         return this.SueldoBase;
     }
+    
 public double getLiquido(){
      this.Liquido=this.SueldoBase+this.Bonificacion - (0.0483*this.SueldoBase);
      return this.Liquido;
 }
 public double getaumento(){
      this.aumento=(this.SueldoBase*0.10)+this.SueldoBase;
+     return this.aumento;
+    
+}
+public double getaumento2(){
+   this.aumento=((this.SueldoBase*0.10)+this.SueldoBase*0.10)+this.SueldoBase;
+     return this.aumento;
+}
+public double getaumento3(){
+   this.aumento=(((this.SueldoBase*0.10)+this.SueldoBase*0.10)+this.SueldoBase*0.10+this.SueldoBase);
      return this.aumento;
 }
     public void setSueldoBase(double SueldoBase) {
