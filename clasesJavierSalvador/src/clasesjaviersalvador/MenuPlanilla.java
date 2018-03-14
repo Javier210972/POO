@@ -17,7 +17,7 @@ public class MenuPlanilla {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      Scanner Planilla = new Scanner(System.in);
+       Scanner Planilla = new Scanner(System.in);
        Empleado Menu = new Empleado();
         String ingreso;
         
@@ -59,14 +59,11 @@ public class MenuPlanilla {
         }
         if (ingreso.equals("b")) {
             System.out.println(Menu.toString());
-             System.out.println("Que datos desea calcular? SI:b NO:cualquier letra");
+             System.out.println("Que dato desea calcular? ");
              ingreso = Planilla.nextLine();
                     
         }
-        if (ingreso.equals("no")) {
-             System.out.println("Que datos desea calcular? SI:b NO:cualquier letra");
-             ingreso = Planilla.nextLine();
-        }
+        
         
         if (ingreso.equals("c")) {
             System.out.println("El IGGS ES: "+Menu.getSueldoBase());
@@ -78,8 +75,17 @@ public class MenuPlanilla {
         }
          if (ingreso.equals("e")) {
             System.out.println("El aumento es: "+Menu.getaumento());
+             System.out.println("Desea otro aumento?");
+              ingreso = Planilla.nextLine();
+             if (ingreso.equals("e")) {
+                System.out.println("El 2 aumento es: "+Menu.getaumento2());
+                 System.out.println("Desea uno mas?");
+                 ingreso = Planilla.nextLine();
+                 if (ingreso.equals("e")) {
+                System.out.println("El 3 aumento es: "+Menu.getaumento3());
+             }
             
         }
     }
     
-}
+    }}
