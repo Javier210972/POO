@@ -17,13 +17,13 @@ public class MenuTv {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner Menu = new Scanner(System.in);
+        Scanner Menu = new Scanner(System.in);
         Tv MenuT = new Tv();
         
-        String dato="f";
+        String dato="h";
         System.out.println("TV");
         System.out.println("Ingrese una opcion");
-        while (!dato.equals("z")) {
+        while (!dato.equals("f")) {
             
             
             System.out.print(" a)Power ");
@@ -31,7 +31,7 @@ public class MenuTv {
             System.out.print(" c)Bajar canal ");
             System.out.print(" d)Subir volumen ");
             System.out.println("e)Bajar volumen");
-            System.out.println("z)salir");
+            System.out.println("f)salir");
             dato = Menu.next();
             if (dato.equals("a")) {
                 MenuT.encendido();
@@ -58,3 +58,6 @@ public class MenuTv {
            }
         }
         
+
+    
+

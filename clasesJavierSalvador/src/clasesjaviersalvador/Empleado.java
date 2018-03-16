@@ -19,14 +19,14 @@ private double Bonificacion;
 private double Descuentos;
 private double Liquido;
 private double aumento;
-private double SueldoBase2;
-private double SueldoBase3;
+private double IGGS;
+
 
 
 public Empleado() {
  }
 
-public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,double SueldoBase,double Bonificacion,double Descuentos,double liquido,double aumento,double SueldoBase2,double SueldoBase3)
+public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,double SueldoBase,double Bonificacion,double Descuentos,double liquido,double aumento,double IGGS)
 {
  this.Codigoempleado=Codigo;
  this.Nombre=Nombre;
@@ -37,12 +37,13 @@ public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,doub
  this.Descuentos=Descuentos;
  this.Liquido=liquido;
  this.aumento=aumento;
- this.aumento=SueldoBase2;
- this.aumento=SueldoBase3;
+ this.IGGS=IGGS;
+ 
 
 }
 
-    public String getCodigoempleado() {
+
+public String getCodigoempleado() {
         return Codigoempleado;
     }
 
@@ -73,10 +74,18 @@ public Empleado(String Codigo,String Nombre,String Apellido,String Nocarnet,doub
     public void setNocarnet(String Nocarnet) {
         this.Nocarnet = Nocarnet;
     }
+    public void setSueldoBase(double SueldoBase) {
+        this.SueldoBase=SueldoBase;
+    }
+    
+public void setIGGS(double IGGS) {
+        this.IGGS=IGGS;
+    }
 
     public double getSueldoBase() {
-        this.SueldoBase=0.0483*this.SueldoBase;
-        return this.SueldoBase;
+        this.IGGS=0.0483*(this.SueldoBase);
+        
+        return this.IGGS;
     }
     
 public double getLiquido(){
@@ -96,14 +105,13 @@ public double getaumento3(){
    this.aumento=(((this.SueldoBase*0.10)+this.SueldoBase*0.10)+this.SueldoBase*0.10+this.SueldoBase);
      return this.aumento;
 }
-    public void setSueldoBase(double SueldoBase) {
-        this.SueldoBase = SueldoBase;
-    }
+   
 
     public double getBonificacion() {
         return Bonificacion;
     }
-
+ 
+ 
     public void setBonificacion(double Bonificacion) {
         this.Bonificacion = Bonificacion;
     }

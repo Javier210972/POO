@@ -48,7 +48,7 @@ public class calculadora {
         return this.suma;
 }
 public int resta() {
-        this.resta = this.valor1 - this.valor2 - this.valor3 - this.valor4;
+        this.resta = this.valor1 - this.valor4;
         return this.resta;
 }
 public int multiplicacion() {

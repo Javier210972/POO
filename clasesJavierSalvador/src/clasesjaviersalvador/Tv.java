@@ -5,6 +5,8 @@
  */
 package clasesjaviersalvador;
 
+import java.util.Scanner;
+
 /**
  *
  * @author toshiba2
@@ -28,8 +30,21 @@ public class Tv {
     public boolean encendido() {
         if (estado == false) {
             this.estado = true;
+           
+            if (this.nocanal == 0) {
+
+                this.nocanal = 5;
+            }
+            if (this.nocanal == 1) {
+
+                this.nocanal = 1;
+            }
+            if (this.nocanal == 5) {
+
+                this.nocanal = 5;
+            }
             
-            System.out.println("TV Encendida, Canal:1");
+            System.out.println("TV Encendida, Canal:"+this.nocanal);
         } else {
             this.estado = false;
             System.out.println("TV Apadado");

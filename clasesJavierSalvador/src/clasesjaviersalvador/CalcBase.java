@@ -59,7 +59,7 @@ public class CalcBase {
             
         }
             
-        System.out.println("Numero a base 8: " + acumulador);
+        System.out.println("Numero a base 8= " + acumulador);
         return ValorD;
     }
      public int getValorD3() {
@@ -90,7 +90,7 @@ public class CalcBase {
             
         }
             
-        System.out.println("Numero a base 3: " + acumulador);
+        System.out.println("Numero a base 3= " + acumulador);
          return ValorD;
      }
      public double getValorB4() {
@@ -134,7 +134,7 @@ public class CalcBase {
             
             
        }
-        System.out.println("la base 10 del numero Cuaternario "+Cuaternario+" es: "+suma); 
+        System.out.println("la base 10 del numero Cuaternario "+Cuaternario+" es= "+suma); 
        
 
     
@@ -200,7 +200,7 @@ public class CalcBase {
             
             
        }
-        System.out.println("la base 10 del numero Heptal "+Heptal+" es: "+suma);
+        System.out.println("la base 10 del numero Heptal "+Heptal+" es= "+suma);
          return ValorB;
      }
     public void setValorD(int ValorD) {

@@ -21,24 +21,24 @@ public class MenuBase {
         CalcBase Calcu = new CalcBase();
         String ingreso;
         System.out.println("Ingrese una opcion para calcular");
-        System.out.print("(1)De Base 10 a base 8 ");
-        System.out.print("(2) De base 10 a base 3 ");
-        System.out.print("(3)De base 4 a base 10 ");
-        System.out.print("(4)De base 7 a base 10 ");
-        System.out.println("(5) Salir");
+        System.out.println("(1)De Base 10 a base 8 ");
+        System.out.println("(2)De base 10 a base 3 ");
+        System.out.println("(3)De base 4 a base 10 ");
+        System.out.println("(4)De base 7 a base 10 ");
+        System.out.println("(5)Salir");
         ingreso=Base.next();
         
         if (ingreso.equals("1")) {
-            System.out.println(Calcu.getValorD8());
+            Calcu.getValorD8();
         }
         if (ingreso.equals("2")) {
-            System.out.println(Calcu.getValorD3());
+            Calcu.getValorD3();
         }
          if (ingreso.equals("3")) {
-            System.out.println(Calcu.getValorB4());
+            Calcu.getValorB4();
         }
          if (ingreso.equals("4")) {
-            System.out.println(Calcu.getValorB7());
+            Calcu.getValorB7();
         }
         
         
